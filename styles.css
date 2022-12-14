@@ -1,0 +1,146 @@
+:root {
+  --background-color: #010b16;
+  --transition-time: 200ms;
+}
+body {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+p,
+span,
+div,
+button {
+  font-family: "Lato", "sans-serif";
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.25);
+}
+
+nav > .navbar {
+  display: flex;
+  padding: 1.5rem 2rem;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+a > .logo {
+  height: 3%;
+  width: 3%;
+}
+
+.nav-buttons {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  /* background-color: var(--background-color); */
+  background-color: inherit;
+  display: inline-block;
+}
+
+main {
+  flex-grow: 1;
+  position: relative;
+  /* border: 10px solid rgb(255, 255, 255); */
+}
+
+main > article {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: grid;
+  opacity: 0;
+  /* border: 10px solid rgb(255, 255, 255); */
+}
+
+/* ------------------------------ PROJECTS ------------------------------ */
+.reel-images {
+  width: 28vmin;
+  height: 42vmin;
+  object-fit: cover;
+  object-position: 100% 50%;
+}
+
+#image-reel {
+  display: flex;
+  gap: 4vmin;
+  position: relative;
+  left: 0%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  user-select: none;
+  align-items: center;
+  justify-content: center;
+  width: 200%;
+}
+
+.reel-image-text {
+  text-align: center;
+  margin-top: 5%;
+}
+
+/* ------------------------------ PAGE TRANSITIONS ------------------------------ */
+#article-about {
+  opacity: 0;
+  transition: opacity var(--transition-time) ease-in-out;
+}
+
+#article-about.fade {
+  opacity: 1;
+}
+
+#article-projects {
+  opacity: 0;
+  transition: opacity var(--transition-time) ease-in-out;
+}
+
+#article-projects.fade {
+  opacity: 1;
+}
+
+#article-experience {
+  opacity: 0;
+  transition: opacity var(--transition-time) ease-in-out;
+}
+
+#article-experience.fade {
+  opacity: 1;
+}
+
+#article-contact {
+  opacity: 0;
+  transition: opacity var(--transition-time) ease-in-out;
+}
+
+#article-contact.fade {
+  opacity: 1;
+}
+
+/* ------------------------------ ABOUT ------------------------------ */

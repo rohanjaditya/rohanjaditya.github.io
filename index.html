@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohan J Aditya</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <nav>
+    <div id="nav-logo" class="navbar">
+      <a>
+        <img class="logo" , src="/images/logo-white.png" alt="RJ" />
+      </a>
+    </div>
+    <div id="nav-about" class="navbar">
+      <button id="button-about" class="nav-buttons">ABOUT</button>
+      <button id="button-experience" class="nav-buttons">EXPERIENCE</button>
+      <button id="button-projects" class="nav-buttons">PROJECTS</button>
+      <button id="button-contact" class="nav-buttons">CONTACT</button>
+      <!-- <a href="#" id="about-button">ABOUT</a> -->
+      <!-- <a href="#">EXPERIENCE</a>
+      <a href="#">PROJECTS</a>
+      <a href="#">CONTACT</a> -->
+    </div>
+  </nav>
+
+  <main>
+    <!-- ------------------------------ PROJECTS ------------------------------ -->
+    <article id="article-projects" data-status="inactive">
+      <!-- SleepNet -->
+      <div id="image-reel" data-mouse_down_at="0" data-prev_perc="0">
+        <div class="reel-container">
+          <a
+            href="https://github.com/rohanjaditya/deep-sleep-net"
+            target="_blank"
+            draggable="false"
+          >
+            <img
+              class="reel-images"
+              src="/images/sleep.jpg"
+              draggable="false"
+            />
+          </a>
+          <div class="reel-image-text">SLEEP STAGE PREDICTION</div>
+        </div>
+
+        <!-- SummNews -->
+        <div class="reel-container">
+          <a
+            href="https://github.com/rohanjaditya/summ-news"
+            target="_blank"
+            draggable="false"
+          >
+            <img class="reel-images" src="/images/summ.jpg" draggable="false" />
+          </a>
+          <div class="reel-image-text">NEWS SUMMARIZATION</div>
+        </div>
+
+        <!-- FaceMask -->
+        <div class="reel-container">
+          <a
+            href="https://github.com/rohanjaditya/face-mask-recognition"
+            target="_blank"
+            draggable="false"
+          >
+            <img class="reel-images" src="/images/mask.jpg" draggable="false" />
+          </a>
+          <div class="reel-image-text">FACE MASK RECOGNITION</div>
+        </div>
+
+        <!-- Asteroids -->
+        <div class="reel-container">
+          <a
+            href="https://github.com/rohanjaditya/hazardous-asteroids"
+            target="_blank"
+            draggable="false"
+          >
+            <img
+              class="reel-images"
+              src="/images/asteroid.jpg"
+              draggable="false"
+            />
+          </a>
+          <div class="reel-image-text">ASTEROID CLASSIFICATION</div>
+        </div>
+
+        <!-- Spotify -->
+        <div class="reel-container">
+          <a
+            href="https://github.com/rohanjaditya/spotify-visualization"
+            target="_blank"
+            draggable="false"
+          >
+            <img
+              class="reel-images"
+              src="/images/spotify.jpg"
+              draggable="false"
+            />
+          </a>
+          <div class="reel-image-text">SPOTIFY VISUALIZATION</div>
+        </div>
+
+        <!-- Personality -->
+        <div class="reel-container">
+          <a
+            href="https://github.com/rohanjaditya/personality-analysis"
+            target="_blank"
+            draggable="false"
+          >
+            <img
+              class="reel-images"
+              src="/images/customer.jpg"
+              draggable="false"
+            />
+          </a>
+          <div class="reel-image-text">PERSONALITY ANALYSIS</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ------------------------------ ABOUT ------------------------------ -->
+    <article id="article-about" data-status="active">
+      <div>ABOUT SECTION</div>
+    </article>
+
+    <!-- ------------------------------ EXPERIENCE ------------------------------ -->
+    <article id="article-experience" data-status="inactive">
+      <div>EXPERIENCE SECTION</div>
+    </article>
+
+    <!-- ------------------------------ CONTACT ------------------------------ -->
+    <article id="article-contact" data-status="inactive">
+      <div>CONTACT SECTION</div>
+    </article>
+  </main>
+
+  <script src="script_switch.js"></script>
+  <script src="script_projects.js"></script>
+  <script src="script_about.js"></script>
+
+  <body></body>
+</html>
