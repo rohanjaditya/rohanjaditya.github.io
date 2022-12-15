@@ -6,6 +6,7 @@ var contact = document.getElementById("article-contact");
 window.onload = () => fade_switch("about");
 
 document.getElementById("button-projects").onclick = () => {
+    alert("clicked");
     if(projects.dataset.status === "inactive") {
         fade_switch("projects");
     }
@@ -28,7 +29,6 @@ document.getElementById("button-experience").onclick = () => {
 //         fade_switch("contact");
 //     }
 // }
-
 
 
 const fade_switch = (page) => {
