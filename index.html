@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rohan J Aditya</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/816a8ae4f7.js" crossorigin="anonymous"></script>
   </head>
 
   <nav>
@@ -14,22 +15,21 @@
         <img class="logo" , src="/images/logo-white.png" alt="RJ" />
       </a>
     </div>
+
     <div id="nav-about" class="navbar">
       <button id="button-about" class="nav-buttons">ABOUT</button>
       <button id="button-experience" class="nav-buttons">EXPERIENCE</button>
       <button id="button-projects" class="nav-buttons">PROJECTS</button>
-      <button id="button-contact" class="nav-buttons">CONTACT</button>
-      <!-- <a href="#" id="about-button">ABOUT</a> -->
-      <!-- <a href="#">EXPERIENCE</a>
-      <a href="#">PROJECTS</a>
-      <a href="#">CONTACT</a> -->
+      <!-- <button id="button-contact" class="nav-buttons">CONTACT</button> -->
     </div>
+
   </nav>
 
   <main>
     <!-- ------------------------------ PROJECTS ------------------------------ -->
     <article id="article-projects" data-status="inactive">
       <!-- SleepNet -->
+      <div class="text-projects">Projects</div>
       <div id="image-reel" data-mouse_down_at="0" data-prev_perc="0">
         <div class="reel-container">
           <a
@@ -123,6 +123,22 @@
     <!-- ------------------------------ ABOUT ------------------------------ -->
     <article id="article-about" data-status="active">
       <div>ABOUT SECTION</div>
+
+      <div>mid</div>
+
+      <div id="nav-icons">
+        <div class="contact-links">
+          <a href="mailto:rohanjaditya05@gmail.com">
+            <i id="link-svg" class="fa-solid fa-envelope" style="font-size:32px;color:white;"></i>
+          </a>
+          <a href="http://www.github.com/rohanjaditya">
+            <i id="link-svg" class="fa-brands fa-github" style="font-size:32px;color:white;"></i>
+          </a>
+          <a href="http://www.linkedin.com/in/rjaditya/">
+            <i id="link-svg" class="fa-brands fa-linkedin" style="font-size:32px;color:white;"></i>
+          </a>
+        </div>
+      </div>
     </article>
 
     <!-- ------------------------------ EXPERIENCE ------------------------------ -->
@@ -131,14 +147,13 @@
     </article>
 
     <!-- ------------------------------ CONTACT ------------------------------ -->
-    <article id="article-contact" data-status="inactive">
+    <!-- <article id="article-contact" data-status="inactive">
       <div>CONTACT SECTION</div>
-    </article>
+    </article> -->
   </main>
 
   <script src="script_switch.js"></script>
   <script src="script_projects.js"></script>
   <script src="script_about.js"></script>
-
-  <body></body>
+  ></script>
 </html>

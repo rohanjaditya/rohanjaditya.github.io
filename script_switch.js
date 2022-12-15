@@ -23,11 +23,11 @@ document.getElementById("button-experience").onclick = () => {
     }
 }
 
-document.getElementById("button-contact").onclick = () => {
-    if(contact.dataset.status === "inactive") {
-        fade_switch("contact");
-    }
-}
+// document.getElementById("button-contact").onclick = () => {
+//     if(contact.dataset.status === "inactive") {
+//         fade_switch("contact");
+//     }
+// }
 
 
 
@@ -50,11 +50,11 @@ const fade_switch = (page) => {
         experience.dataset.status = "active";
     }
 
-    if(page === "contact") {
-        contact.classList.toggle('fade');
-        contact.style.zIndex = 1;
-        contact.dataset.status = "active";
-    }
+    // if(page === "contact") {
+    //     contact.classList.toggle('fade');
+    //     contact.style.zIndex = 1;
+    //     contact.dataset.status = "active";
+    // }
 
     if(page !== "about") {
         about.style.zIndex = -1;
@@ -74,9 +74,9 @@ const fade_switch = (page) => {
         experience.dataset.status = "inactive";
     }
 
-    if(page !== "contact") {
-        contact.style.zIndex = -1;
-        if (contact.dataset.status === "active") contact.classList.toggle('fade');
-        contact.dataset.status = "inactive";
-    }
+    // if(page !== "contact") {
+    //     contact.style.zIndex = -1;
+    //     if (contact.dataset.status === "active") contact.classList.toggle('fade');
+    //     contact.dataset.status = "inactive";
+    // }
 }
